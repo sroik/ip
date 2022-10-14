@@ -1,4 +1,5 @@
 # IP
+![Build](https://github.com/sroik/ip/actions/workflows/build.yml/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![Swift](https://img.shields.io/badge/swift-5-orange)](./)
 
