@@ -7,9 +7,9 @@ import Foundation
 /* enum is better for namespaces, so you can't create an instance of it */
 public enum IP {
     public struct Adress {
-        let hostname: String
-        let family: Family
-        let interface: Interface
+        public let hostname: String
+        public let family: Family
+        public let interface: Interface
     }
 
     public enum Family: String, Hashable, CaseIterable {
