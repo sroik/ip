@@ -6,7 +6,7 @@ import Foundation
 
 /* enum is better for namespaces, so you can't create an instance of it */
 public enum IP {
-    public struct Adress {
+    public struct Address {
         public let hostname: String
         public let family: Family
         public let interface: Interface
@@ -23,9 +23,6 @@ public enum IP {
         
         /** Cellular interface */
         case pdp_ip0 = "pdp_ip0"
-        
-        /** Loopback interface */
-        case lo0 = "lo0"
         
         /** Bridge interface */
         case bridge100 = "bridge100"

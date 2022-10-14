@@ -8,9 +8,9 @@ public extension IP {
     static func search(
         families: [Family] = Family.allCases,
         interfaces: [Interface] = Interface.allCases
-    ) -> [Adress] {
+    ) -> [Address] {
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
-        var results: [Adress] = []
+        var results: [Address] = []
         
         guard getifaddrs(&ifaddr) == 0 else {
             return results
@@ -50,7 +50,7 @@ public extension IP {
                 interfaces.contains(intf),
                 !hostname.isEmpty
             {
-                results.append(Adress(
+                results.append(Address(
                     hostname: hostname,
                     family: family,
                     interface: intf
